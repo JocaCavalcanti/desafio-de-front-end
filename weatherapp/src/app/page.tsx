@@ -1,6 +1,5 @@
-import { faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from "./page.module.css";
+import { GlobeAmericasIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
   return (
@@ -8,15 +7,15 @@ export default function Home() {
       <div className={styles.headerMain}>
         <h1>Weather</h1>
         <h2>Select a city</h2>
-        <FontAwesomeIcon icon={faEarthAmericas} />
+        <GlobeAmericasIcon className={styles.icon} />
       </div>
       <div className={styles.buttonContainer}>
-        <button className={styles.buttonArounder}>City 1</button>
-        <button className={styles.buttonArounder}>City 2</button>
-        <button className={styles.buttonArounder}>City 3</button>
-        <button className={styles.buttonArounder}>City 4</button>
-        <button className={styles.buttonArounder}>City 5</button>
-        <button className={styles.buttonArounder}>City 6</button>
+        <a href="/city" className={styles.linkButton}>Dalloy</a>
+        <a href="/city2" className={styles.linkButton}>Fairbanks</a>
+        <a href="/city3" className={styles.linkButton}>London</a>
+        <a href="/city4" className={styles.linkButton}>Recife</a>
+        <a href="/city5" className={styles.linkButton}>Vancouver</a>
+        <a href="/city6" className={styles.linkButton}>Yakutsk</a>
       </div>
     </main>
   );

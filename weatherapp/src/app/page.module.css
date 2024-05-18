@@ -1,4 +1,3 @@
-
 .main {
   background-color: #0F0F0F;
   border: 2px solid rebeccapurple;
@@ -6,36 +5,81 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 124px;
+  padding: 20px;
 }
 
 .headerMain {
   color: white;
   margin-bottom: 20px;
+  font-weight: 200;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerMain h1 {
+  margin: 0;
+  font-weight: 250; 
+  font-size: 40px;
+}
+
+.headerMain h2 {
+  margin: 0;
+  font-weight: 150;
+  font-size: 23px;
+}
+
+.icon {
+  width: 135px; 
+  height: 135px;
+  color: currentColor;
+  margin-top: 10px; 
+  font-size: small;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 .buttonContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.buttonArounder {
-  flex: 1 1 30%;
-
-  min-width: 100px;
-  margin: 5px;
-  padding: 10px;
-  background-color: #0F0F0F; /* Fundo preto */
-  color: white; /* Texto branco */
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-width: 600px;
   
+
 }
 
-.buttonArounder:hover {
-  background-color: white;
-  color: #0F0F0F;
+.linkButton {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 19px;
+}
+
+.linkButton:hover,
+.linkButton:focus {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  .buttonContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .buttonContainer {
+    grid-template-columns: 1fr;
+  }
+  .linkButton {
+    font-size: 1em;
+    padding: 10px;
+  }
 }
