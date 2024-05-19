@@ -1,6 +1,5 @@
 .main {
   background-color: #0F0F0F;
-  border: 2px solid rebeccapurple;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -31,6 +30,10 @@
   font-size: 23px;
 }
 
+.buttonEdit {
+  margin-bottom: 30px;
+}
+
 .icon {
   width: 135px; 
   height: 135px;
@@ -44,10 +47,12 @@
 .buttonContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
   width: 100%;
   max-width: 600px;
-  
-
+  text-decoration: none;
+  row-gap: 28px;
 }
 
 .linkButton {
@@ -57,29 +62,35 @@
   cursor: pointer;
   background: none;
   border: none;
-  padding: 10px 20px;
+  padding: 20px;
   text-align: center;
-  font-size: 19px;
+  font-size: 22px;
 }
 
 .linkButton:hover,
 .linkButton:focus {
-  text-decoration: underline;
+  text-decoration: none; 
+  text-decoration-color: transparent;
 }
-
 
 @media (max-width: 600px) {
   .buttonContainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttonEdit {
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 400px) {
   .buttonContainer {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
+
   .linkButton {
-    font-size: 1em;
-    padding: 10px;
+    font-size: 17px;
   }
 }

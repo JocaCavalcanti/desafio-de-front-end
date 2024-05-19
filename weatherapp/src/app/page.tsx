@@ -1,5 +1,7 @@
+
 import styles from "./page.module.css";
 import { GlobeAmericasIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -7,15 +9,28 @@ export default function Home() {
       <div className={styles.headerMain}>
         <h1>Weather</h1>
         <h2>Select a city</h2>
+        
         <GlobeAmericasIcon className={styles.icon} />
       </div>
       <div className={styles.buttonContainer}>
-        <a href="/city" className={styles.linkButton}>Dalloy</a>
-        <a href="/city2" className={styles.linkButton}>Fairbanks</a>
-        <a href="/city3" className={styles.linkButton}>London</a>
-        <a href="/city4" className={styles.linkButton}>Recife</a>
-        <a href="/city5" className={styles.linkButton}>Vancouver</a>
-        <a href="/city6" className={styles.linkButton}>Yakutsk</a>
+        <Link href="/london"> 
+          <span className={styles.linkButton}>Dalloy</span>
+        </Link>
+        <Link href="/dalloy"> 
+          <span className={styles.linkButton}>Fairbanks</span>
+        </Link>
+        <Link href="/fairbanks"> 
+          <span className={styles.linkButton}>London</span>
+        </Link>
+        <Link href="/recife"> 
+          <span className={styles.linkButton}>Recife</span>
+        </Link>
+        <Link href="/vancouver"> 
+          <span className={styles.linkButton}>Vancouver</span>
+        </Link>
+        <Link href="/yakutsk"> 
+          <span className={styles.linkButton}>Yakutsk</span>
+        </Link>
       </div>
     </main>
   );

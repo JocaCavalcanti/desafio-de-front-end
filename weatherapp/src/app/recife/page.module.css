@@ -1,0 +1,136 @@
+.blueBackground {
+    height: 100vh;
+    width: 100%;
+    background-color: #57cbdc;
+    position: relative;
+  }
+  
+  .headerMain {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 150px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 135px; 
+    height: 135px; 
+    color: currentColor;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .numC {
+    font-size: 110px;
+  }
+  
+  .celsius {
+    font-size: 30px;
+    align-self: flex-start;
+    margin-top: 14px; 
+    margin-left: 13px;
+  }
+  
+  .temperatureContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .temperature {
+    display: flex;
+    align-items: flex-start;
+    font-size: 48px;
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .tempRange {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateX(-50%);
+  }
+  
+  .tempRangeItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 17px;
+  }
+  
+  .arrowIcon {
+    width: 14px;
+    height: 14px; 
+  }
+  
+  .iconArrow {
+    color: white;
+    position: absolute;
+    top: 26px;
+    left: 30px;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .headerMain h1 {
+    margin: 0;
+    font-weight: 250;
+    font-size: 40px;
+}
+  
+  .headerMain h2 {
+    margin: 0;
+    font-weight: 150;
+    font-size: 23px;
+}
+  
+  .temperatureContainerTwo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 23%;
+}
+  
+  .climateItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  .climateItem p {
+    margin-top: 5px; 
+    font-size: 22px;
+}
+
+.climateItem span{
+    margin-top: 5px;
+}
+  
+  .climateItem .icon {
+    width: 50px; 
+    height: 50px; 
+}
+  
+
+  .temperatureContainerTree {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px; 
+    width: 20%; 
+}
+
+
+.bar{
+     margin-top: 15px;
+    width: 1px; 
+    height: 30px; 
+    border-left: 1px solid #fff; 
+}
