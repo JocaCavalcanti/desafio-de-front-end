@@ -13,13 +13,13 @@ export default function Home() {
         <GlobeAmericasIcon className={styles.icon} />
       </div>
       <div className={styles.buttonContainer}>
-        <Link href="/london"> 
-          <span className={styles.linkButton}>Dalloy</span>
-        </Link>
-        <Link href="/dalloy"> 
-          <span className={styles.linkButton}>Fairbanks</span>
+        <Link href="/madrid"> 
+          <span className={styles.linkButton}>Madrid</span>
         </Link>
         <Link href="/fairbanks"> 
+          <span className={styles.linkButton}>Fairbanks</span>
+        </Link>
+        <Link href="/london"> 
           <span className={styles.linkButton}>London</span>
         </Link>
         <Link href="/recife"> 

@@ -42,12 +42,12 @@ export default function Weather() {
 
   useEffect(() => {
     if (forecastData && currentWeatherData) {
-      return; //so pra evitar chamar mais de uam vez
-    }
+        return; //so pra evitar chamar mais de uam vez
+      }
     const fetchWeatherData = async () => {
       try {
-        const forecastResponse = await axios.get<ForecastData>('https://api.openweathermap.org/data/2.5/forecast?q=Recife,br&APPID=ded46fd8947879ec29ba6a7963360d88');
-        const currentWeatherResponse = await axios.get<any>('https://api.openweathermap.org/data/2.5/weather?q=Recife,br&APPID=ded46fd8947879ec29ba6a7963360d88');
+        const forecastResponse = await axios.get<ForecastData>('https://api.openweathermap.org/data/2.5/forecast?q=Vancouver,ca&APPID=ded46fd8947879ec29ba6a7963360d88');
+        const currentWeatherResponse = await axios.get<any>('https://api.openweathermap.org/data/2.5/weather?q=Vancouver,ca&APPID=ded46fd8947879ec29ba6a7963360d88');
         
         setForecastData(forecastResponse.data);
         setCurrentWeatherData(currentWeatherResponse.data);
@@ -58,19 +58,19 @@ export default function Weather() {
           case 'sunny':
             setBackgroundClass('blueBackground');
             setTextColorClass('whiteText');
-          break;
+            break;
           case 'rain':
             setBackgroundClass('darkGrayBackground');
             setTextColorClass('whiteText');
-          break;
+            break;
           case 'snow':
             setBackgroundClass('lightGrayBackground');
             setTextColorClass('blackText');
-          break;
+            break;
           case 'clear':
             setBackgroundClass('clearBackground');
             setTextColorClass('whiteText');
-          break;
+            break;
           default:
             setBackgroundClass('DefaultBackground');
             setTextColorClass('whiteText');

@@ -1,136 +1,345 @@
-.blueBackground {
-    height: 100vh;
-    width: 100%;
-    background-color: #57cbdc;
-    position: relative;
-  }
-  
-  .headerMain {
-    color: white;
-    margin-bottom: 20px;
-    font-weight: 200;
-    text-align: center;
-    padding-top: 150px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .icon {
-    width: 135px; 
-    height: 135px; 
-    color: currentColor;
-    margin-top: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .numC {
-    font-size: 110px;
-  }
-  
-  .celsius {
-    font-size: 30px;
-    align-self: flex-start;
-    margin-top: 14px; 
-    margin-left: 13px;
-  }
-  
-  .temperatureContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .temperature {
-    display: flex;
-    align-items: flex-start;
-    font-size: 48px;
-    margin-top: 10px;
-    position: relative;
-  }
-  
-  .tempRange {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    transform: translateX(-50%);
-  }
-  
-  .tempRangeItem {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 17px;
-  }
-  
-  .arrowIcon {
-    width: 14px;
-    height: 14px; 
-  }
-  
-  .iconArrow {
-    color: white;
-    position: absolute;
-    top: 26px;
-    left: 30px;
-    width: 35px;
-    height: 35px;
-  }
-  
-  .headerMain h1 {
-    margin: 0;
-    font-weight: 250;
-    font-size: 40px;
+.blueBackground {         /* ----------estilização da cor do backgroud dependendo da req */
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: #53C5D6;
 }
-  
-  .headerMain h2 {
-    margin: 0;
-    font-weight: 150;
-    font-size: 23px;
+.clearBackground{
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: #00BFFF;
 }
-  
-  .temperatureContainerTwo {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    width: 23%;
-}
-  
-  .climateItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-  
-  .climateItem p {
-    margin-top: 5px; 
-    font-size: 22px;
+.whiteText {
+  color: white;
 }
 
-.climateItem span{
-    margin-top: 5px;
+.blackText {
+  color: black;
 }
-  
-  .climateItem .icon {
-    width: 50px; 
-    height: 50px; 
+.darkGrayBackground {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: #5D6574;
 }
-  
+
+.lightGrayBackground {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: #CACACA;
+}
+
+.DefaultBackground {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: #47a4b2;
+}                                 /* ----------estilização da cor do backgroud dependendo da req */
+
+
+
+
+.headerMain {       /* -----------estilização do header */
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerMain h1 {
+  margin: 0;
+  font-weight: 250;
+  font-size: 40px;
+}
+
+.headerMain h2 {
+  margin: 0;
+  font-weight: 150;
+  font-size: 23px;
+}                        /* -----------estilização do header */
+
+
+
+
+
+.icon {       /* -------estilização geral de icon */
+  width: 135px;
+  height: 135px;
+  color: currentColor;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.numC {    /* -------estilização do icone de Celsius */
+  font-size: 110px;
+}
+
+.celsius {
+  font-size: 30px;
+  align-self: flex-start;
+  margin-top: 14px;
+  margin-left: 13px;
+}
+
+.temperatureContainer {       /* --------esilização da row das temperaturas e semelhantes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature {
+  display: flex;
+  align-items: flex-start;
+  font-size: 48px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.tempRange {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateX(-50%);
+}
+
+.tempRangeItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 17px;
+}                       /* --------esilização da row das temperaturas e semelhantes */
+
+
+
+
+
+
+.arrowIcon {  /* ---------icone das setas de temp max e min */
+  width: 14px;
+  height: 14px;
+}
+
+.iconArrow { /* --------Icone de navegação da home */
+  color: white;
+  position: absolute;
+  top: 26px;
+  left: 30px;
+  width: 35px;
+  height: 35px;
+}
+
+
+
+.temperatureContainerTwo { /* --Container da segunda row de informaçoes */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  width: 23%;
+}
+
+.climateItem { /* --Configurações gerais das rows de clima */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.climateItem .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.climateItem p {
+  margin-top: 5px;
+  font-size: 22px;
+}
+
+.climateItem span {
+  margin-top: 5px;
+}
+
+
+
+.temperatureContainerTree { /* --Container da terceira row de informaçoes */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 23%;
+}
+
+
+/* ---Barra entre os dados adicionais do clima-- */
+.bar {    
+  margin-top: 15px;
+  width: 1px;
+  height: 30px;
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+
+
+/* ----------------------------------------------------------------------------------------Responsividade */
+
+@media (max-width: 1807px) {
+  .headerMain {
+    padding-top: 120px;
+  }
+
+  .numC {
+    font-size: 90px;
+  }
+
+  .celsius {
+    font-size: 25px;
+  }
+
+  .temperature {
+    font-size: 40px;
+  }
+
+  .tempRangeItem {
+    font-size: 15px;
+  }
+
+  .temperatureContainerTwo {
+    width: 25%;
+  }
 
   .temperatureContainerTree {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px; 
-    width: 20%; 
+    width: 25%;
+    font-size: 15px;
+  }
 }
 
 
-.bar{
-     margin-top: 15px;
-    width: 1px; 
-    height: 30px; 
-    border-left: 1px solid #fff; 
+@media (max-width: 1450px) {
+  .temperatureContainerTwo {
+    width: 30%;
+  }
+
+  .temperatureContainerTree {
+    width: 30%;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1123px) {
+  .temperatureContainerTwo {
+    width: 40%;
+  }
+
+  .temperatureContainerTree {
+    width: 40%;
+  }
+}
+
+@media (max-width: 903px) {
+  .temperatureContainerTwo {
+    width: 50%;
+  }
+
+  .temperatureContainerTree {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerMain {
+    padding-top: 100px;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .numC {
+    font-size: 70px;
+  }
+
+  .celsius {
+    font-size: 20px;
+  }
+
+  .temperature {
+    font-size: 30px;
+  }
+
+  .tempRangeItem {
+    font-size: 15px;
+  }
+
+  .temperatureContainerTwo {
+    width: 55%;
+  }
+
+  .temperatureContainerTree {
+    width: 55%;
+  }
+}
+
+@media (max-width: 653px) {
+  .temperatureContainerTwo {
+    width: 63%;
+  }
+
+  .temperatureContainerTree {
+    width: 63%;
+  }
+}
+
+@media (max-width: 550px) {
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .temperatureContainerTwo {
+    width: 70%;
+  }
+
+  .temperatureContainerTree {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .headerMain {
+    padding-top: 80px;
+  }
+
+  .temperatureContainerTwo {
+    width: 90%;
+  }
+
+  .temperatureContainerTree {
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .numC {
+    font-size: 80px;
+  }
+
+  .temperatureContainerTwo {
+    width: 100%;
+  }
+
+  .temperatureContainerTree {
+    width: 95%;
+  }
 }

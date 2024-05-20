@@ -1,54 +1,62 @@
-# Desafio de Front-end
+# Weather App
 
-Criar um web app que liste cidades específicas (listadas abaixo) e, após a seleção de alguma por parte do usuáio, exiba uma tela de detalhes da cidade escolhida com informações do seu clima através de uma API pública de dados meteorológicos.
+## Descrição
 
-## Sugestões de APIs
+Este é um aplicativo simples desenvolvido usando Next.js para consumir a API OpenWeatherMap e exibir informações meteorológicas. O aplicativo exibe informações como temperatura atual, velocidade do vento, nascer e pôr do sol, e umidade. Além disso, a cor de fundo da página é alterada dinamicamente com base nas condições climáticas atuais.
 
-- https://www.openweathermap.org/current
-- https://www.weatherapi.com
+## Funcionalidades
 
-## Layout
+- Exibição da temperatura atual, máxima e mínima.
+- Previsão do tempo por hora(madrugada, manhã, tarde e noite).
+- Exibição da velocidade do vento.
+- Exibição dos horários de nascer e pôr do sol.
+- Exibição da umidade do ar.
+- Mudança dinâmica da cor de fundo com base nas condições climáticas atuais.
 
-- [Link do layout no InVision](https://explosion.invisionapp.com/public/share/SX19J12TJR#screens/476656918)
+## Instalação
 
-## Hospedagem
+1. Clone este repositório em sua máquina local usando o seguinte comando:
 
-O projeto precisa ser publicado numa das duas opções abaixo:
+    ```
+    git clone https://github.com/seu-usuario/weather-app.git
+    ```
 
-- [Netlify](https://www.netlify.com)
-- [Vercel](https://www.vercel.com)
+2. Navegue até o diretório do projeto:
 
-## Requisitos de avaliação
+    ```
+    cd weather-app
+    ```
 
-- Faça um fork deste repositório;
-- As cidades listadas devem ser:
-    - Dallol (NG);
-    - Fairbanks (US);
-    - Londres (GB);
-    - Recife (BR);
-    - Vancouver (CA);
-    - Yakutsk (RU).
-- Implementação de testes unitários;
-- Fidelidade ao layout enviado (estamos enviando o layout mobile e desktop);
-- Frameworks JavaScript opcional (de preferência, nesta ordem 😉):
-    - React com Next.js
-    - React com Vite;
-    - Vue;
-    - Angular.
-- Responsividade atendendo 3 breakpoints:
-    - Smartphone;
-    - Tablet;
-    - Desktop.
+3. Instale as dependências do projeto:
 
-## Observações
+    ```
+    npm install
+    ```
 
-- Você deve usar os ícones do layout que melhor se encaixarem em cada condição climática;
-- Considere os horários 3:00, 9:00, 15:00 e 21:00 para as definições das temperaturas de Dawn, Morning, Afternoon, Night, respectivamente.
+4. Inicie o servidor de desenvolvimento:
 
-## Diferenciais
+    ```
+    npm run dev
+    ```
 
-- Rodar a aplicação fazendo o uso de um container do Docker.
+5. Acesse o aplicativo em seu navegador utilizando o seguinte URL:
 
-Agora é com você! Faça o fork e responda o nosso contato com o link, ok?
+    ```
+    http://localhost:3000
+    ```
 
-Boa sorte!
+## Uso
+
+- Ao acessar o aplicativo, você verá escolher a cidade e obter as informações meteorológicas da cidade configurada.
+- A cor de fundo da página mudará dinamicamente com base nas condições climáticas atuais. Por exemplo, se estiver chovendo, a cor de fundo será cinza escuro; se estiver ensolarado, a cor de fundo será azul.
+
+## Tecnologias Utilizadas
+
+- [Next.js](https://nextjs.org/) - Um framework React para desenvolvimento de aplicativos da web.
+- [React](https://reactjs.org/) - Uma biblioteca JavaScript para construir interfaces de usuário.
+- [OpenWeatherMap API](https://openweathermap.org/api) - Uma API de dados meteorológicos.
+
+## Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request ou uma issue para reportar bugs, solicitar funcionalidades ou fazer qualquer contribuição para melhorar este projeto.
+
